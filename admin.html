@@ -1,0 +1,10 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow"><title>Painel | BRAGA BARBEARIA</title><link rel="stylesheet" href="admin.css"></head>
+<body><header><a class="brand" href="index.html"><span class="mark">✂</span><span><b>BRAGA</b><small>PAINEL ADMINISTRATIVO</small></span></a><span class="secure">ÁREA PRIVADA</span></header>
+<main>
+<section class="login" id="loginPanel"><p class="eyebrow">ACESSO RESTRITO</p><h1>Entrar no painel</h1><p class="muted">Somente o responsável pela barbearia deve acessar os dados dos clientes.</p>
+<form id="loginForm"><label for="email">E-mail administrativo</label><input id="email" type="email" placeholder="seuemail@exemplo.com" required><label for="password">Senha</label><input id="password" type="password" placeholder="Sua senha" required><button type="submit">ENTRAR NO PAINEL →</button><p class="note" id="loginMessage">A autenticação segura será conectada ao Supabase. Este formulário ainda não valida credenciais.</p></form></section>
+<section class="dashboard" id="dashboard" hidden><div class="dash-head"><div><p class="eyebrow">VISÃO GERAL</p><h1>Agenda do dia</h1></div><button class="secondary" id="logout">Sair</button></div>
+<label for="agendaDate">Escolha a data</label><input id="agendaDate" type="date"><p class="muted">Toque em um agendamento para abrir os detalhes.</p><div id="appointments" class="appointments"></div><p class="note">Estes são dados demonstrativos. O painel só deve exibir clientes reais após a autenticação e o banco de dados serem configurados.</p></section>
+</main><script src="admin.js"></script></body></html>

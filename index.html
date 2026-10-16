@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="pt-BR"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f5f5f5"><title>BRAGA BARBEARIA | Agendamento</title>
+<link rel="stylesheet" href="style.css"></head><body>
+<header class="header"><a class="brand" href="#"><span class="mark">✂</span><span><b>BRAGA</b><small>BARBEARIA</small></span></a><a class="top-link" href="#agendar">Agendar ↗</a></header>
+<main>
+<section class="hero"><p class="eyebrow">SUA IMAGEM. SEU ESTILO.</p><h1>Seu próximo corte começa aqui.</h1><p class="lead">Atendimento com hora marcada. Escolha seu serviço e reserve seu horário.</p><a class="button" href="#agendar">AGENDAR HORÁRIO <span>→</span></a>
+<div class="features"><article><span>▦</span><h2>Agendamento</h2><p>Simples e rápido</p></article><article><span>◷</span><h2>Hora marcada</h2><p>Sem filas desnecessárias</p></article></div></section>
+<section class="section" id="servicos"><p class="eyebrow">ESCOLHA SEU SERVIÇO</p><h2>Nossos serviços</h2><p class="muted">Preços ilustrativos, que poderão ser ajustados.</p>
+<div class="services"><article><div><h3>Corte tradicional</h3><p>Acabamento limpo e caprichado.</p></div><b>R$ 35</b></article><article><div><h3>Degradê</h3><p>Transição precisa e personalizada.</p></div><b>R$ 40</b></article><article><div><h3>Barba</h3><p>Desenho e alinhamento.</p></div><b>R$ 25</b></article><article><div><h3>Corte + barba</h3><p>O combo completo.</p></div><b>R$ 55</b></article></div></section>
+<section class="section booking" id="agendar"><p class="eyebrow">RESERVE SEU HORÁRIO</p><h2>Vamos marcar?</h2><p class="muted">Preencha os dados para solicitar seu agendamento.</p>
+<form id="bookingForm"><label for="name">Nome completo</label><input id="name" name="name" autocomplete="name" maxlength="90" required placeholder="Seu nome">
+<label for="phone">WhatsApp</label><input id="phone" name="phone" type="tel" autocomplete="tel" maxlength="20" required placeholder="(67) 99999-9999">
+<label for="service">Serviço</label><select id="service" required><option value="">Selecione um serviço</option><option>Corte tradicional</option><option>Degradê</option><option>Barba</option><option>Corte + barba</option></select>
+<div class="form-row"><div><label for="date">Data</label><input id="date" type="date" required></div><div><label for="time">Horário</label><select id="time" required><option value="">Escolha a data primeiro</option></select></div></div>
+<button class="button submit" type="submit">SOLICITAR AGENDAMENTO <span>→</span></button><p class="note">Demonstração visual: reservas ainda não são salvas. A integração com banco de dados será feita na próxima etapa.</p><p class="status" id="status" aria-live="polite"></p></form></section>
+</main><footer><b>BRAGA BARBEARIA</b><p>Estilo em cada detalhe.</p><small>© <span id="year"></span> BRAGA BARBEARIA</small></footer><script src="script.js"></script></body></html>
